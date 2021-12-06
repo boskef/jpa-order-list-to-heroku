@@ -13,18 +13,24 @@ import java.util.List;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+/**
+ * Unit test for OrderServiceImpl
+ * @author Kayhan Öztürk
+ * @version 0.1
+ * @since   0.1
+ */
 public class OrderServiceImplTest {
 
-    OrderService orderService;
-    Order order;
-    Order order1;
-    List<Product> productList;
-    Product product;
+    private OrderService orderService;
+    private Order order;
+    private Order order1;
+    private List<Product> productList;
+    private Product product;
 
     @Before
     public void setUp() throws Exception {
-        order = mock(Order.class);
         orderService = mock(OrderService.class);
+        order = mock(Order.class);
 
         product = new Product("computer", "19000", new Date());
         productList = new ArrayList<>();
