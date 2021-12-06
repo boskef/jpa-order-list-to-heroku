@@ -1,6 +1,5 @@
 package com.example.project.model;
 
-import jdk.jfr.Name;
 
 import javax.persistence.*;
 import java.util.ArrayList;
